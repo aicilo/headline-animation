@@ -275,8 +275,6 @@ async function fadeAnimation(container, words) {
 function delay(ms) {
   if (ms === undefined) ms = 200;
   return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve("Done");
-    }, ms);
+    setTimeout(resolve, ms);
   });
 }
